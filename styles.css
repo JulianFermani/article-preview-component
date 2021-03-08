@@ -15,33 +15,75 @@ body{
 }
 
 .card{
-  height: 500px;
+  height: 250px;
   width: 60%;
   display: flex;
   margin: auto;
   border-radius: 7px;
-  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
+.card__header--container{
+
+}
+
 .card__img--container img{
   height: 250px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius:7px;
 }
 
 .card__header--text{
   font-size: 20px;
   color: hsl(217, 19%, 35%);
   font-weight: 700;
+  width: 80%;
+  margin: 20px auto 10px auto;
 }
 
 .card__text{
   font-size: 13px;
   color: hsl(214, 17%, 51%);
+  width: 80%;
+  margin: 0 auto;
 }
-
 
 .card__text--img img{
   border-radius: 50%;
-  height: 50px;
+  height: 40px;
+}
+
+.card__text--author{
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 14px;
+}
+
+.card__text--author--container{
+  margin-left: 5px;
+}
+
+.card__author{
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 0 7px;
+  color: hsl(217, 19%, 35%);
+}
+
+.card__date{
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 0 7px;
+  color: hsl(214, 17%, 51%);
+}
+
+.card__button__container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__button__share{
+  font-size: 30px;
 }
