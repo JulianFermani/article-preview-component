@@ -26,7 +26,7 @@ body{
 }
 
 .card__header--container{
-
+  position: relative;
 }
 
 .card__img--container img{
@@ -86,4 +86,56 @@ body{
 
 .card__button__share{
   font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -40px;
+  margin-right: 60px;
+}
+
+.button__ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.hide{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 35px;
+  height: 10px;
+  border-radius: 13px;
+  background-color: hsl(217, 19%, 35%);
+  left: 217px;
+  bottom: 90px;
+  box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.25);
+}
+
+.hide:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: hsl(217, 19%, 35%);
+  border-bottom: 0;
+  margin-bottom: -15px;
+  margin-left: -15px;
+}
+
+.hide__p{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.button__ul li{
+  font-size: 23px;
+  color: #ffffff;
+  margin-right: 17px;
 }
